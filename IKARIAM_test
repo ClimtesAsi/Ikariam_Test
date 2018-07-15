@@ -105,10 +105,9 @@ namespace MyFirstTest
             driver.FindElement(By.Id("loginBtn")).Click();
             driver.FindElement(By.CssSelector("div.centerButton:nth-child(3) > a:nth-child(1)")).Click();
 
-
             driver.FindElement(By.CssSelector(".avatarName > a:nth-child(2)")).Click();
+            
             var newname= driver.FindElement(By.CssSelector("#tab_optionsAccount > div:nth-child(1) > div:nth-child(2) > form:nth-child(1) > table:nth-child(4) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > input:nth-child(1)"));
-
 
             Console.WriteLine(newname.GetAttribute("value"));
 
