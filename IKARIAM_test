@@ -114,6 +114,18 @@ namespace IkariamTest
             newname.Clear();
             newname.SendKeys("Loryia");
             newname.Submit();
+            
+            driver.FindElement(By.CssSelector(".close")).Click();
+
+            driver.FindElement(By.XPath("/html/body/div[3]/div[2]/div[1]/div[2]/form/div[3]/a")).Click();
+
+            driver.FindElement(By.Id("js_islandResourceScrollTitle")).Click();
+
+            var workers = driver.FindElement(By.Id("inputWorkers"));
+            workers.SendKeys("10");
+            workers.Submit();
+
+            driver.FindElement(By.CssSelector("html body#island.flexible.direction_ltr div#container div#resource_c.templateView.focusable.focus div#resource.mainContentBox.contentBox01h.toggleMenu div.hd.header.mainHeader.draggable div.close")).Click();
 
             Thread.Sleep(8000);
             driver.Quit();
