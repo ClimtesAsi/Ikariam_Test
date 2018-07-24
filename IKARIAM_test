@@ -59,7 +59,7 @@ namespace IkariamTest
             driver.FindElement(By.Id("logServer")).Click();
             driver.FindElement(By.CssSelector("#logServer > option:nth-child(5)")).Click();
             driver.FindElement(By.Id("loginName")).SendKeys("ajoana@interia.pl");
-            driver.FindElement(By.Id("loginPassword")).SendKeys("1895_lo");
+            driver.FindElement(By.Id("loginPassword")).SendKeys("");
             driver.FindElement(By.Id("loginBtn")).Click();
 
             driver.FindElement(By.CssSelector("div.centerButton:nth-child(3) > a:nth-child(1)")).Click();
